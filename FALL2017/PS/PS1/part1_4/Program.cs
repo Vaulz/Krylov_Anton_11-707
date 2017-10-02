@@ -10,9 +10,7 @@ namespace part1_4
     {
         static void Main()
         {
-            // k1 - Первая координата (где стоит)
             string firstCoord = Console.ReadLine();
-            // k2 - Вторая кооридната (куда надо попасть)
             string secondCoord = Console.ReadLine(); 
             if (firstCoord[0] == secondCoord[0] || firstCoord[1] == secondCoord[1])
                 Console.WriteLine("YES");
