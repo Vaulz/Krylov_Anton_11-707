@@ -18,6 +18,7 @@ namespace part3_7
                     answer = "NO";
                     break;
                 }
+                previousNumber = number;
             }
             Console.WriteLine(answer);
         }
