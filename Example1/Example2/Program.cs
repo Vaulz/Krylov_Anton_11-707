@@ -9,10 +9,8 @@ namespace Example2
             double a = double.Parse(Console.ReadLine());
             double b = double.Parse(Console.ReadLine());
             double c = double.Parse(Console.ReadLine());
-            double y;
             Console.WriteLine(Max(a, b, c) + SecondExpression(a, b));
         }
-
         static double Max(double a, double b, double c)
         {
 
@@ -21,7 +19,6 @@ namespace Example2
             else
                 return a * b * c;
         }
-
         static double SecondExpression(double a, double b)
         {
             if (a - b > 0)
@@ -29,10 +26,11 @@ namespace Example2
                     return a / (a - b);
                 else
                     return b / (a - b);
-            else if (a < b)
-                return a / -1 * (a - b);
-            else
-                return b / -1 * (a - b);
+            else 
+                if (a < b)
+                    return a / -1 * (a - b);
+                else
+                    return b / -1 * (a - b);
         }
     }
 }
