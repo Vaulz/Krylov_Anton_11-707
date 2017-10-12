@@ -9,7 +9,7 @@ namespace part4_10
         // Найти длину и значение суммы элементов последовательности простых чисел, в сумме дающих простое число, меньшее 1000
         // Крылов Антон 11-707
 
-        // Проверка на простату числа
+        // Проверка на простоту числа
         static bool IsPrimeNumber(int number)
         {
             for (int i = 2; i <= Math.Sqrt(number); i++)
@@ -30,7 +30,7 @@ namespace part4_10
                 {
                     lengthOfSequence++;
                     if (IsPrimeNumber(sum += number))
-                        Console.WriteLine($"Length - {lengthOfSequence}, Amount - {sum}");
+                        Console.WriteLine($"Length of the sequence - {lengthOfSequence}, Amount - {sum}");
                 }
             }
         }
