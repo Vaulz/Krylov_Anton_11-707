@@ -6,13 +6,13 @@ namespace part3_2
     {
         static void Main()
         {
-            int number = int.Parse(Console.ReadLine());
+            double number = double.Parse(Console.ReadLine());
             double eps = 0.000000000001;
             double result =(RootOfNumber(number,eps));
             Console.WriteLine($"Корень квадратный из числа {number} : {result}. \nТабличное значение: {Math.Sqrt(number)}.");
         }
 
-        static double RootOfNumber(int x,double eps)
+        static double RootOfNumber(double x,double eps)
         {
             double previousNumber=0;
             double currentNumber = x;
