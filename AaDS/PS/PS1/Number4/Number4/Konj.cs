@@ -46,6 +46,8 @@ namespace Number4
                     case "-x5":
                         ListOfVariables.Add(-5);
                         break;
+                    default:
+                        throw new Exception("Data is incorrect");
                 }
             }
             ListOfVariables.Sort();

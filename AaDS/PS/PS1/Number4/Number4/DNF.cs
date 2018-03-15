@@ -73,20 +73,41 @@ namespace Number4
             return newDnf;
         }
 
+        //public void SortByLength()
+        //{
+        //    var length = ListOfConjuncts.Count;
+        //    for (int i = 0; i < length; i++)
+        //    {
+        //        for (int j = 0; j < length - 1; j++)
+        //        {
+        //            if (ListOfConjuncts[j].Data.ListOfVariables.Count > ListOfConjuncts[j + 1].Data.ListOfVariables.Count)
+        //            {
+        //                var temp = ListOfConjuncts[j + 1].Data;
+        //                ListOfConjuncts[j + 1].Data = ListOfConjuncts[j].Data;
+        //                ListOfConjuncts[j].Data = temp;
+        //            }
+        //        }
+        //    }
+        //}
+
         public void SortByLength()
         {
-            var length = ListOfConjuncts.Count;
-            for (int i = 0; i < length; i++)
+            bool flag = true;
+            while (flag)
             {
-                for (int j = 0; j < length - 1; j++)
+                var current = ListOfConjuncts.Head;
+                flag = false;
+                while (current.Next!=null)
                 {
-                    if (ListOfConjuncts[j].Data.ListOfVariables.Count > ListOfConjuncts[j + 1].Data.ListOfVariables.Count)
+                    if (current.Data.ListOfVariables.Count > current.Next.Data.ListOfVariables.Count)
                     {
-                        var temp = ListOfConjuncts[j + 1].Data;
-                        ListOfConjuncts[j + 1].Data = ListOfConjuncts[j].Data;
-                        ListOfConjuncts[j].Data = temp;
+                        var temp = current.Next.Data;
+                        current.Next.Data = current.Data;
+                        current.Data = temp;
+                        flag = true;
                     }
-                }
+                    current = current.Next;
+                }  
             }
         }
     }
