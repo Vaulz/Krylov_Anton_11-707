@@ -15,6 +15,9 @@ namespace Number4
             example.Insert(new Konj("x4&x2"));
             Console.WriteLine(example);
 
+
+
+
             DNF dnf = new DNF("x1^x5&-x3");
             example.Disj(dnf);
             Console.WriteLine(example);
@@ -22,7 +25,7 @@ namespace Number4
             example.SortByLength();
             Console.WriteLine(example);
 
-            DNF incorrect =new DNF("x6");
+            DNF incorrect = new DNF("x6");
         }
     }
 }

@@ -1,0 +1,17 @@
+6 Informatics Hodges A.D 3
+6 Algebra Hodges A.C 2
+2 Geometry Lewin A.B 3
+8 Geometry Attwood A.B 4
+5 Geometry Carter A.C 4
+9 Algebra Russel A.B 2
+1 Algebra Lewin F.C 3
+6 Informatics Russel F.C 5
+1 Geometry Becker A.B 5
+1 Geometry Haig F.C 3
+8 Algebra Haig A.A 4
+2 Geometry Becker F.C 4
+4 Geometry Becker A.B 2
+11 Informatics Otis F.C 5
+10 Geometry Becker A.C 4
+1 Algebra Attwood A.D 4
+3 Informatics Otis F.C 3
