@@ -10,7 +10,6 @@ namespace number_25
         public string Surname { get; set; }
         public double Debt { get; set; }
         public int Apartment { get; set; }
-        public int Floor { get; set; }
 
         public Inhabitant(string source)
         {
@@ -18,7 +17,6 @@ namespace number_25
             Debt = double.Parse(array[0]);
             Apartment = int.Parse(array[1]);
             Surname = array[2];
-            Floor = ((Apartment - 1) % 36) / 4 + 1;
 
         }
         public override string ToString()
@@ -64,7 +62,7 @@ namespace number_25
 
             var answer = ans.Where(x => Math.Abs(x.indebtedness - ans.Max(y => y.indebtedness)) < 0.001);
 
-            Console.WriteLine(answer.First().entrance);
+            Console.WriteLine($"{answer.First().entrance} {answer.First().indebtedness}");
         }
     }
 }

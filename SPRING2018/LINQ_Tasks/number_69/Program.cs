@@ -75,8 +75,7 @@ namespace number_69
                             surname = group.key.Surname,
                             initials = group.key.Initials,
                             group.marksCount
-                        }),
-                    item.grade
+                        })
                 })
                 .SelectMany(group => group.students)
                 .OrderBy(student => student.surname)

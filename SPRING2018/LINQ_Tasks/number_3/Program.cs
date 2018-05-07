@@ -16,8 +16,8 @@ namespace number_3
         {
             var tmp = source.Split(' ');
             var array = Array.ConvertAll(tmp, Convert.ToInt32);
-            Year = array[0];
-            Month = array[1];
+            Year = array[1];
+            Month = array[0];
             Duration = array[2];
             Code = array[3];
         }

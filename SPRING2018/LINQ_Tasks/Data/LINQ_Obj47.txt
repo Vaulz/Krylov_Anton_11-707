@@ -8,3 +8,4 @@ Ucos 413 95 Gavrilova
 Rosneft 391 92 Korolenko
 Gazprom 389 92 Absalyamova
 Ucos 395 95 Yamasheva
+Ucos 397 92 Yamasheva
